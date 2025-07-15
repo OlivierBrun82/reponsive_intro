@@ -46,25 +46,45 @@ a {
 /* Flex Wrap Box Section */
 
 body {
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(235, 234, 234);
 }
 
 .Box-Flex {
-    background-color: white;
-    max-width: 900px;
+    max-width: 1000px;
     min-width: 250px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-left: 25%;
 }
 
 .Box {
     display: flex;
-    padding: 2em 1em;
-    gap: 20px;
-    border-radius: 1em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: white;
+    min-width: 150px;
+    min-height: 100px;
+    margin: 5px 5px 5px 5px;
+    box-shadow: 0 2px 8px #ccd6f6;
+}
 
+/* Responsive design on img */
 
+img {
+    margin-top: 25px;
+    border-radius: 15px;
+}
+
+/* We call the container of the img */
+.Box-Flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25%;
 }
 
 
