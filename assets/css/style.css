@@ -2,6 +2,7 @@
 * {
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
 /* we remove the default style of links */
@@ -30,7 +31,6 @@ header {
 }
 
 .nav-menu {
-    width: 100px;
     display: flex;
     align-items: flex-end;
     padding-left: 25%;
@@ -84,12 +84,18 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: auto;
+    min-width: auto;
     padding-left: 25%;
 }
 
+@media (min-width:750px) {
+    /* here we call the class we want to change */
 
-/* .explain {
-    background-color: antiquewhite;
-    color: black;
-    border-radius: 5px;
-} */
+}
+
+
+@media (max-width:1250px) {
+    /* here we call the class we want to change */
+
+}
