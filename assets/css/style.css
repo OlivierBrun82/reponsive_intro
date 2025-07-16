@@ -20,7 +20,11 @@ header {
 
 .header-container {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 5%;
 }
 
 .logo {
@@ -50,7 +54,7 @@ body {
 }
 
 .Box-Flex {
-    max-width: 1000px;
+    max-width: 100%;
     min-width: 250px;
     display: flex;
     align-items: center;
@@ -82,11 +86,12 @@ img {
 /* We call the container of the img */
 .Box-Flex {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: auto;
-    min-width: auto;
-    padding-left: 25%;
+    justify-content: flex-start;
+}
+
+.BoxDiv {
+    display: flex;
+    flex: wrap;
 }
 
 @media (min-width:750px) {
